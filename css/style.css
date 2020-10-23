@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 100px 1fr 50px;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'header header header'
+        'lsidebar content rsidebar'
+        'footer footer footer';
+    min-height: 100vh;
+    text-align: center;
+}
+
+.grid-wrapper > div {
+    background-color: rgb(36, 199, 36);
+    padding: 1rem;
+}
+
+.one {
+    grid-area: header;
+}
+
+.two {
+    grid-area: lsidebar;
+}
+
+.three {
+    grid-area: content;
+}
+
+.four {
+    grid-area: rsidebar;
+}
+
+.five {
+    grid-area: footer;
+}
+
