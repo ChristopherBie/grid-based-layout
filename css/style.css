@@ -5,12 +5,13 @@
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    grid-template-rows: 100px 1fr 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 50px;
     grid-gap: 1rem;
     grid-template-areas:
         'header header'
-        'content rsidebar'
+        'content content'
+        'lcontent rcontent'
         'footer footer';
     min-height: 100vh;
     text-align: center;
@@ -26,15 +27,15 @@
 }
 
 .two {
-    grid-area: lsidebar;
-}
-
-.three {
     grid-area: content;
 }
 
+.three {
+    grid-area: lcontent;
+}
+
 .four {
-    grid-area: rsidebar;
+    grid-area: rcontent;
 }
 
 .five {
