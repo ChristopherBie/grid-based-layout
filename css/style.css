@@ -5,13 +5,13 @@
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 100px 1fr 50px;
     grid-gap: 1rem;
     grid-template-areas:
-        'header header header'
-        'lsidebar content rsidebar'
-        'footer footer footer';
+        'header header'
+        'content rsidebar'
+        'footer footer';
     min-height: 100vh;
     text-align: center;
 }
